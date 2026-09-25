@@ -39,4 +39,7 @@ Read the [scientific state](docs/v1_final_scientific_state.md) and [claim–evid
 
 ## Project lead / maintainer
 
-**Boyan Dong** — Undergraduate Researcher in Biomedical Engineering, Southeast University. Research interests: biosignal processing, wearable sensing, human–computer interaction, and human augmentation. Contact: [@boyandong](https://github.com/boyandong).
+**Boyan Dong** 
+Undergraduate Researcher in Biomedical Engineering, Southeast University. 
+Research interests: biosignal processing, wearable sensing, human–computer interaction, and human augmentation.
+Contact: [@boyandong](https://github.com/boyandong).
