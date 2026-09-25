@@ -35,4 +35,8 @@ Flip means the frozen consumer's output differs between predicted and measured p
 - The result concerns one official paired data family, one frozen upstream path, and one independently trained consumer. Cross-source calibration equivalence, universal API generalization, population-wide reliability, streaming operation, and clinical or product safety are unestablished.
 - The two gates optimize different customer requirements. Their secondary tradeoffs and residual absolute risks remain material.
 
-Read the [scientific state](docs/v1_final_scientific_state.md) and [claim–evidence matrix](docs/claim_evidence_matrix.md) before reusing a result. The [repository map](docs/repo_map.md) lists the public materials. This repository is a curated public summary, with no raw data, model binaries, participant-level records, or executable gate implementation. [Data availability](DATA_AVAILABILITY.md), [third-party notices](THIRD_PARTY_NOTICES.md), and [reuse and license status](REUSE_AND_LICENSE_STATUS.md) explain access and reuse limits.
+Read the [scientific state](docs/v1_final_scientific_state.md) and [claim–evidence matrix](docs/claim_evidence_matrix.md) before reusing a result. The [repository map](docs/repo_map.md) lists the public materials. This repository is a curated public summary, with no raw data, model binaries, participant-level records, or executable gate implementation. [Data availability](DATA_AVAILABILITY.md), [third-party notices](THIRD_PARTY_NOTICES.md), and [reuse and license status](REUSE_STATUS.md) explain access and reuse limits.
+
+## Project lead / maintainer
+
+**Boyan Dong** — Undergraduate Researcher in Biomedical Engineering, Southeast University. Research interests: biosignal processing, wearable sensing, human–computer interaction, and human augmentation. Contact: [@boyandong](https://github.com/boyandong).
