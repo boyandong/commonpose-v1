@@ -6,6 +6,8 @@
 
 EMG → frozen pretrained EMG-to-pose upstream → predicted joint-angle state → frozen pose-only downstream consumer → reliability gate → serve or abstain. A paired reference path feeds measured pose to the *same* consumer. The consumer was trained independently on DB9 posture data; the V1 evaluation did not retrain it on the final emg2pose outcomes.
 
+![CommonPose V1 serving path and measured-pose offline reference path](figures/architecture.svg)
+
 This matters because named physical-state coordinates do not guarantee reliable downstream decisions when measured pose is replaced by estimated pose. The gate estimates when a specific frozen consumer is less likely to change its output. [Architecture](docs/architecture.md) explains the measurement boundary.
 
 ## Experimental chain
@@ -15,6 +17,8 @@ Gate4C characterized heterogeneous substitution on a frozen validation cohort. G
 ## Final confirmation
 
 The frozen final cohort contained **20 CommonPose-development-untouched users and 702 paired files**. At fixed **30% within-user acceptance**:
+
+![Median paired user-level Flip risk reductions for the two frozen reliability contracts](figures/final_confirmation.svg)
 
 | Contract | Target risk | Median paired user improvement, full coverage to accepted blocks | Positive users | Holm-adjusted one-sided sign p |
 |---|---|---:|---:|---:|
@@ -31,4 +35,4 @@ Flip means the frozen consumer's output differs between predicted and measured p
 - The result concerns one official paired data family, one frozen upstream path, and one independently trained consumer. Cross-source calibration equivalence, universal API generalization, population-wide reliability, streaming operation, and clinical or product safety are unestablished.
 - The two gates optimize different customer requirements. Their secondary tradeoffs and residual absolute risks remain material.
 
-Read the [scientific state](docs/v1_final_scientific_state.md) and [claim–evidence matrix](docs/claim_evidence_matrix.md) before reusing a result. The [repository map](docs/repo_map.md) lists the public materials. This repository is a curated public summary, with no raw data, model binaries, participant-level records, or executable gate implementation. [Data availability](DATA_AVAILABILITY.md), [third-party notices](THIRD_PARTY_NOTICES.md), and [license status](LICENSE_STATUS.md) explain access and reuse limits.
+Read the [scientific state](docs/v1_final_scientific_state.md) and [claim–evidence matrix](docs/claim_evidence_matrix.md) before reusing a result. The [repository map](docs/repo_map.md) lists the public materials. This repository is a curated public summary, with no raw data, model binaries, participant-level records, or executable gate implementation. [Data availability](DATA_AVAILABILITY.md), [third-party notices](THIRD_PARTY_NOTICES.md), and [reuse and license status](REUSE_AND_LICENSE_STATUS.md) explain access and reuse limits.
