@@ -1,4 +1,4 @@
-# HumanEngine / CommonPose V1
+# CommonPose V1 — Reliability-Aware EMG-to-Pose Substitution
 
 **Public research release.** CommonPose V1 asks whether a predicted physical hand-state interface can replace measured pose for an independently trained downstream consumer, and whether deployment-visible reliability scores can reduce the consumer's substitution risk by serving only selected blocks.
 
