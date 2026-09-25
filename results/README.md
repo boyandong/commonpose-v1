@@ -1,0 +1,9 @@
+# Aggregate results and provenance
+
+The JSON and CSV in this directory are **derived public summaries**, not original frozen artifacts. They contain aggregate values only, with no participant identifiers, sessions, recording names, per-user records, receipts, or data payloads.
+
+The primary frozen source is the private scientific archive's final confirmation aggregate result, SHA256 **9a4b81447b529b96aab7d76ba3b7861a43ee37f7695b3519e450b790fe1d721b**. Its prespecified plan SHA256 is **b4de5b8dc827e1fd4b349ed59c9f97d8448eb48b6878dc916d6a46eeec93d155**. The final cohort manifest SHA256 is **8820158c3942c56432a900bb809e1e17ad6b4332183b273ea0b01b0bf38d8afe**. The Gate4C validation summary was cross-checked against its archived aggregate analysis, SHA256 **81dce686d7cf4ad07717fd01f48da761da2d25a8a94918c9455b6d5ac204e283**. Hashes identify internal evidence; the source artifacts are intentionally absent from this public repository.
+
+Effect values in JSON and CSV are **risk fractions**; multiply by 100 for percentage points. The paired effect for a user is that user's full-coverage risk minus risk on the lowest-score accepted blocks at the frozen within-user 30% rule. The median of paired effects need not equal the difference between the two median absolute risks. One-sided exact sign tests use 20 users as independent units, with Holm adjustment across the two prespecified contracts.
+
+Ordinary Flip weights eligible blocks by observed usage. Balanced Flip averages supported measured-pose reference classes. Gate4F's frozen support rule requires at least 30 accepted blocks per class. ACC is consumer-reference agreement, not human semantic gesture accuracy. Accepted-block ACC excludes abstained blocks. The summary's rounded percentages are for reading; exact fractions and p-values appear in JSON.

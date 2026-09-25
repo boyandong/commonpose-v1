@@ -1,0 +1,71 @@
+{
+  "schema": "commonpose-v1-public-aggregate-summary-v1",
+  "source_final_result_sha256": "9a4b81447b529b96aab7d76ba3b7861a43ee37f7695b3519e450b790fe1d721b",
+  "cohort_users": 20,
+  "files": 702,
+  "coverage_rule": "lowest risk score, ceil(0.30 * eligible blocks) within each user",
+  "coverage": 0.3,
+  "effect_unit": "risk fraction; full user risk minus accepted user risk",
+  "contracts": {
+    "Gate4E_Requirement_U": {
+      "primary_risk": "ordinary_usage_weighted_flip",
+      "paired_effect": {
+        "median": 0.17081504879185225,
+        "q25": 0.1603579248820548,
+        "q75": 0.20419476980409454,
+        "min": 0.07750407861175046,
+        "max": 0.2723075015016114,
+        "n": 20
+      },
+      "positive_users": 20,
+      "raw_one_sided_sign_p": 9.5367431640625e-07,
+      "holm_adjusted_one_sided_sign_p": 1.9073486328125e-06,
+      "median_user_primary_risk_full": 0.3286061776963363,
+      "median_user_primary_risk_accepted": 0.1418887676992649,
+      "median_user_secondary_risk_full": 0.6528903047249125,
+      "median_user_secondary_risk_accepted": 0.6840114484069577
+    },
+    "Gate4F_Requirement_B": {
+      "primary_risk": "class_balanced_flip",
+      "paired_effect": {
+        "median": 0.16112784355661863,
+        "q25": 0.12287226705040716,
+        "q75": 0.1806513823435017,
+        "min": 0.02489316554700538,
+        "max": 0.20384643392502522,
+        "n": 20
+      },
+      "positive_users": 20,
+      "raw_one_sided_sign_p": 9.5367431640625e-07,
+      "holm_adjusted_one_sided_sign_p": 1.9073486328125e-06,
+      "median_user_primary_risk_full": 0.6528903047249125,
+      "median_user_primary_risk_accepted": 0.4748364256796202,
+      "median_user_secondary_risk_full": 0.3286061776963363,
+      "median_user_secondary_risk_accepted": 0.34880947119915023
+    }
+  },
+  "descriptive_consumer_reference_acc": {
+    "full_coverage": {
+      "eligible_blocks": 1828243,
+      "correct_blocks": 1191758,
+      "pooled_acc": 0.6518597363698371
+    },
+    "gate4e_accepted": {
+      "accepted_blocks": 548481,
+      "correct_blocks": 457554,
+      "pooled_acc": 0.8342203285072773
+    },
+    "gate4f_accepted": {
+      "accepted_blocks": 548481,
+      "correct_blocks": 351508,
+      "pooled_acc": 0.640875435976816
+    }
+  },
+  "claim_limits": [
+    "final users untouched by CommonPose scientific development, not proven upstream-unseen",
+    "Flip is frozen consumer-output disagreement, not human semantic gesture accuracy",
+    "30% selective ACC describes accepted blocks, not full-coverage system accuracy",
+    "within-user rank acceptance is not a validated future-user global threshold",
+    "no universal API, clinical, product-safety, or population-wide claim"
+  ]
+}
